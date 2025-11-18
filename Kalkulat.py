@@ -22,8 +22,8 @@ def main():
 
         while True:
             try:
-                pertama = int(input("Masukkan angka pertama: "))
-                kedua = int(input("Masukkan angka kedua: "))
+                pertama = float(input("Masukkan angka pertama: "))
+                kedua = float(input("Masukkan angka kedua: "))
             except ValueError:
                 print("Masukkan angka yang valid.")
                 continue
