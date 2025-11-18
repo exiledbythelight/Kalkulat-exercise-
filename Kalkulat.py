@@ -30,14 +30,11 @@ def main():
             break
 
         while True:
-            try:
-                pilihan = input("Anda ingin kalkulasi apa? (+, -, *, /): ")
-                if pilihan in ("+","-","*","/"):
-                    break
-                print("Pilih salah satu komputasi yang tersedia.")
-            except ValueError:
-                print("Masukkan pilihan yang valid.")
-                continue
+            pilihan = input("Anda ingin kalkulasi apa? (+, -, *, /): ")
+            if pilihan in ("+","-","*","/"):
+                break
+            print("Pilih salah satu komputasi yang tersedia.")
+            continue
         print()
 
         if pilihan == "+":
