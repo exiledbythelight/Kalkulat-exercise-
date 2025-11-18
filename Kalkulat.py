@@ -42,20 +42,20 @@ def main():
 
         if pilihan == "+":
             hasil = kalkulat_tambah(pertama,kedua)
-            print(f"Hasil dari {pertama} + {kedua} = {hasil}")
+            print(f"Hasil dari {pertama} + {kedua} = {hasil:.2f}")
         elif pilihan == "-":
             hasil = kalkulat_kurang(pertama,kedua)
-            print(f"Hasil dari {pertama} - {kedua} = {hasil}")
+            print(f"Hasil dari {pertama} - {kedua} = {hasil:.2f}")
         elif pilihan == "*":
             hasil = kalkulat_kali(pertama,kedua)
-            print(f"Hasil dari {pertama} * {kedua} = {hasil}")
+            print(f"Hasil dari {pertama} * {kedua} = {hasil:.2f}")
         elif pilihan == "/":
             try:
                 hasil = kalkulat_bagi(pertama,kedua)
             except ZeroDivisionError:
                 print("Tidak bisa membagi dengan nol!")
             else:
-                print(f"Hasil dari {pertama} / {kedua} = {hasil}")
+                print(f"Hasil dari {pertama} / {kedua} = {hasil:.2f}")
 
         while True:
             answer = input("Ingin lanjut kalkulasi? (y/n): ")
