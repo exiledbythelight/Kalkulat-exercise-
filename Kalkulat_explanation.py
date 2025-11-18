@@ -42,20 +42,20 @@ def main(): # Fungsi utama
 
         if pilihan == "+": # Jika user memilih "+"
             hasil = kalkulat_tambah(pertama,kedua) # Jalankan fungsi penambahan
-            print(f"Hasil dari {pertama} + {kedua} = {hasil}") # Tampilkan hasil
+            print(f"Hasil dari {pertama} + {kedua} = {hasil:.2f}") # Tampilkan hasil
         elif pilihan == "-": # Jika user memilih "-"
             hasil = kalkulat_kurang(pertama,kedua) # Jalankan fungsi pengurangan
-            print(f"Hasil dari {pertama} - {kedua} = {hasil}") # Tampilkan hasil
+            print(f"Hasil dari {pertama} - {kedua} = {hasil:.2f}") # Tampilkan hasil
         elif pilihan == "*": # Jika user memilih "*"
             hasil = kalkulat_kali(pertama,kedua) # Jalankan fungsi pengalian
-            print(f"Hasil dari {pertama} * {kedua} = {hasil}") # Tampilkan hasil
+            print(f"Hasil dari {pertama} * {kedua} = {hasil:.2f}") # Tampilkan hasil
         elif pilihan == "/": # Jika user memilih "/"
             try: # Mencoba meminta input dari user
                 hasil = kalkulat_bagi(pertama,kedua) # Jalankan fungsi pembagian
             except ZeroDivisionError: # Mendeteksi masalah jika ada nilai nol
                 print("Tidak bisa membagi dengan nol!") # Tampilkan pesan error
             else: # Jika tidak ada masalah
-                print(f"Hasil dari {pertama} / {kedua} = {hasil}") # Tampilkan hasil
+                print(f"Hasil dari {pertama} / {kedua} = {hasil:.2f}") # Tampilkan hasil
 
         while True: # Loop ketiga
             answer = input("Ingin lanjut kalkulasi? (y/n): ") # Menawarkan user untuk kalkulasi lagi
