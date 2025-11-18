@@ -30,14 +30,11 @@ def main(): # Fungsi utama
             break # Keluar dari loop jika input valid
 
         while True: # Loop kedua
-            try: # Mencoba meminta input dari user
-                pilihan = input("Anda ingin kalkulasi apa? (+, -, *, /): ") # Meminta input user untuk jenis kalkulasi
-                if pilihan in ("+","-","*","/"): # Jika user memilih salah satu jenis kalkulasi
-                    break # Keluar dari loop jika input valid
-                print("Pilih salah satu komputasi yang tersedia.") # Tampilkan pesan error
-            except ValueError: # Jika mendeteksi ValueError
-                print("Masukkan pilihan yang valid.") # Tampilkan pesan error
-                continue # Mengulangi input dan kembali ke loop kedua
+            pilihan = input("Anda ingin kalkulasi apa? (+, -, *, /): ") # Meminta input user untuk jenis kalkulasi
+            if pilihan in ("+","-","*","/"): # Validasi input user
+                break # Keluar dari loop jika input valid
+            print("Pilih salah satu komputasi yang tersedia.") # Jika tidak valid, maka tampilkan pesan error
+            continue # Kembali ke loop kedua
         print() # Beri jarak
 
         if pilihan == "+": # Jika user memilih "+"
