@@ -22,8 +22,8 @@ def main(): # Fungsi utama
 
         while True: # Loop pertama
             try: # Mencoba meminta input dari user
-                pertama = int(input("Masukkan angka pertama: ")) # Meminta input user untuk nilai pertama
-                kedua = int(input("Masukkan angka kedua: ")) # Meminta input user untuk nilai kedua
+                pertama = float(input("Masukkan angka pertama: ")) # Meminta input user untuk nilai pertama
+                kedua = float(input("Masukkan angka kedua: ")) # Meminta input user untuk nilai kedua
             except ValueError: # Jika input bukan angka
                 print("Masukkan angka yang valid.") # Tampilkan pesan error
                 continue # Mengulangi input dan kembali ke loop pertama
