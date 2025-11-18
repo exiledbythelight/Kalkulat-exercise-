@@ -56,7 +56,7 @@ def main(): # Fungsi utama
 
         while True: # Loop ketiga
             answer = input("Ingin lanjut kalkulasi? (y/n): ") # Menawarkan user untuk kalkulasi lagi
-            if answer in ("y", "n"): # Jika mendeteksi input "y" dan "n"
+            if answer in ("y", "n"): # Validasi input user
                 print() # Beri jarak
                 break # Keluar dari loop jika input valid
             print("Tolong masukkan 'y' untuk ya atau 'n' untuk tidak.") # Tanpilkan pesan error jika input tidak valid
